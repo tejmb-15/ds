@@ -144,8 +144,19 @@ void creation(){
     display();
     
 }
+void midele(){
+  class node* slow,*fast;
+  slow=head;
+  fast=head;
+  while(fast!=NULL){
+      fast=fast->next->next;
+      slow=slow->next;
+  }
+  cout<<slow->data;
+}
 int main()
 {
   creation();
+    midele();
     return 0;
 }
